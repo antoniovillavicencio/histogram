@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/* Title styles */
+
+.title {
+    text-align: center;
+    background-color: #004c8c;
+    color: white;
+    padding: 50px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.title h1 {
+    font-size: 3em;
+    
+}
+
+/* Histogram styles */
+
+.histogram {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.dataInput textarea {
+    border-radius: 10px;
+    border-color: #c7c7c7;
+    padding: 10px;
+    color: #29434e;
+    font-size: 0.8em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.dataInput textarea:focus {
+    outline: none;
+}
+
+.dataInput input[type="submit"] {
+    /* margin: 40px 0; */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 10px 0;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #4f83cc;
+    color: #fafafa;
+    font-size: 1em;
+    font-weight: 800px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.dataInput form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20%;
+    justify-content: space-around;
+}
+
+.histogram .graph {
+    background-color: #fafafa;
+    border: 1px solid #c7c7c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.dataColumn {
+    color: #34515e;
+    position: relative;
+    text-align: center;
+}
+
+.dataColumn p {
+    position: absolute;
+    bottom: -2em;
+    left: 1em;
+    font-size: 0.5em;
+}
+
+.dataColumn:nth-child(odd) {
+    background-color: #34515e;
+}
+
+.dataColumn:nth-child(even) {
+    background-color: #8eacbb;
+}
+
+

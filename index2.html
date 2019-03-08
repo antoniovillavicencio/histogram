@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #graph{
+                border:1px solid black;
+                border-top : none;
+                border-right : none;
+            }
+            #graph div{
+                background: red;
+                float: left;
+            }
+            #graph div:hover{
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="graph"></div>
+        <script type="text/javascript">
+            let graph = document.getElementById("graph");
+            let dimension = 500;
+
+            let data = [1,3,8,1,14,10,2,10,3,2,3,5,18,3,3,1,14,44,41];
+            const MAX = Math.max(...data);
+
+            const width_bar = dimension/data.length;
+
+            graph.style.height = `${dimension}px`;
+            graph.style.width = `${dimension}px`;
+            
+            for(var index =0 ; index < data.length; index++){
+                let element = document.createElement("div");
+                let percent = data[index] / MAX * 100;
+                element.style.width = `${width_bar}px`;
+                element.style.height = `${percent}%`;
+                element.style.marginTop = `${100-percent}%`;
+                graph.appendChild(element);
+            }
+        </script>
+    </body>
+</html>
